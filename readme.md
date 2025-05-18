@@ -1,4 +1,4 @@
-# Install kubernates local dengan minicube dan docker
+#  install Kubernetes lokal menggunakan Minikube + Docker di Ubuntu 24.04
 
 ## 1. Update sistem
 <pre>sudo apt update && sudo apt upgrade -y </pre>
