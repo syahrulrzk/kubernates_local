@@ -1,8 +1,7 @@
 #  Kubernetes lokal menggunakan Minikube + Docker
+Kubernetes (sering disingkat: K8s) adalah platform open-source yang digunakan untuk mengelola container secara otomatis — termasuk deployment, scaling, dan orchestration (pengaturan).
 
 ![Minikube Logo](/image/kubernates_wp.png "Logo Minikube")
-
-Kubernetes (sering disingkat: K8s) adalah platform open-source yang digunakan untuk mengelola container secara otomatis — termasuk deployment, scaling, dan orchestration (pengaturan).
 
 ## 🧠 Konsep sederhana
 Bayangkan kamu punya banyak aplikasi dalam bentuk container (misalnya dari Docker), lalu kamu ingin:
