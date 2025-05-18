@@ -1,4 +1,21 @@
-#  Kubernetes lokal menggunakan Minikube + Docker di Ubuntu 24.04
+#  Kubernetes lokal menggunakan Minikube + Docker
+
+Kubernetes (sering disingkat: K8s) adalah platform open-source yang digunakan untuk mengelola container secara otomatis — termasuk deployment, scaling, dan orchestration (pengaturan).
+
+## 🧠 Konsep sederhana
+Bayangkan kamu punya banyak aplikasi dalam bentuk container (misalnya dari Docker), lalu kamu ingin:
+
+- Menjalankan banyak container di banyak server.
+- Pastikan aplikasi tetap jalan walaupun ada error/crash.
+- Secara otomatis scaling (nambah/ngurangin container sesuai kebutuhan).
+- Update aplikasi tanpa downtime.
+- Mengatur komunikasi antar container dengan aman.
+
+Nah, Kubernetes adalah "otak pusat" yang mengatur semua itu secara otomatis.
+
+
+
+
 
 ## 🧩 Apa itu Minikube?
 Minikube adalah alat ringan untuk menjalankan Kubernetes secara lokal.
