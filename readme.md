@@ -27,7 +27,28 @@ Berarti:
 
 📦 Kamu menjalankan Kubernetes dalam sebuah Docker container di lokalmu.
 
+## 🧠 Mengapa Gunakan Docker Sebagai Driver Minikube?
+- Lebih ringan & cepat dibanding VM.
+- Tidak perlu install VirtualBox/KVM.
+- Mudah dihapus/dibuat ulang.
+- Bisa share image langsung:
+  - Image yang kamu build di Docker lokal bisa langsung digunakan di cluster Minikube tanpa push ke registry.
 
+## 🔄 Alur Minikube (dengan Docker):
+1. `minikube start --driver=docker`
+2. Minikube membuat container (misal `minikube`)
+3. Kubernetes berjalan dalam container itu
+4. Kamu bisa:
+   - Deploy Pod lewat `kubectl`
+   - Lihat container pakai `docker ps`
+   - Gunakan `docker image` untuk build image dan langsung pakai di Kubernetes
+  
+Contoh: Deploy Aplikasi Lokal
+<pre>
+docker build -t myapp:v1 .
+minikube image load myapp:v1
+kubectl run mypod --image=myapp:v1
+</pre>
 
 
 
