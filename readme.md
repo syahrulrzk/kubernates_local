@@ -77,7 +77,6 @@ host: Running
 kubelet: Running
 apiserver: Running
 kubeconfig: Configured
-
 ╭────[ reborn@linux ] [~] 
 ╰────[ ~ 
 </pre>
@@ -95,3 +94,12 @@ minikube   Ready    control-plane   40m   v1.32.0
 ╭────[ reborn@linux ] [~] 
 ╰────[ ~ 
 </pre>
+
+## 🔧 Tips Tambahan
+## 💡 Perintah Dasar Minikube
+
+```bash
+minikube start       # Memulai kluster Kubernetes lokal
+minikube stop        # Menghentikan kluster tanpa menghapus data
+minikube delete      # Menghapus kluster sepenuhnya
+minikube status      # Memeriksa status kluster saat ini
