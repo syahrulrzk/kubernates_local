@@ -50,6 +50,15 @@ Kedua container di atas akan berjalan bersama dalam satu Pod.
 | `kubectl delete pod <nama-pod>` | Menghapus Pod tertentu                 |
 | `kubectl delete -f <file.yaml>` | Menghapus Pod berdasarkan file YAML    |
 
+## 🔧 Sintaks Port Forwarding Pod:
+```shell
+kubectl port-forward pod/<nama-pod> <port-lokal>:<port-pod>
+```
+Contoh
+```shell
+kubectl port-forward pod/nginx 8080:80
+```
+
 ### 🛠️ Debugging & Interaksi
 | Perintah                                                      | Fungsi                                   |
 | ------------------------------------------------------------- | ---------------------------------------- |
