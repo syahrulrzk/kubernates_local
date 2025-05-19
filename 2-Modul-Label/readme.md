@@ -29,3 +29,27 @@ spec:
         - containerPort: 80
 
 ```
+## ✅ Cara Melihat Label:
+```shell
+kubectl get pods --show-labels
+```
+
+## 🔍 Cara Filter Pod Berdasarkan Label:
+```shell
+kubectl get pods -l app=nginx
+```
+
+## 🧩 Tambah / Edit Label (Manual):
+
+```shell
+kubectl label pod nginx env=staging
+```
+Hapus label dari Pod:
+
+```shell
+kubectl label pod nginx env-
+```
+
+## 💡 Ringkasnya:
+
+Label = cara cerdas Kubernetes untuk tahu "mana yang mana" di antara resource-resource yang mirip.
