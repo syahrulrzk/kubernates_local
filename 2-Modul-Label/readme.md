@@ -10,3 +10,22 @@ Contoh: tandai semua Pod yang termasuk ke dalam deployment tertentu
 
 3. Digunakan oleh Service, Deployment, dsb
 Service akan memilih Pod berdasarkan label-nya agar tahu ke mana request harus diarahkan.
+
+## 📌 Contoh Penulisan Label di Pod YAML:
+
+```shell
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx
+  labels:
+    app: nginx
+    env: production
+spec:
+  containers:
+    - name: nginx
+      image: nginx
+      ports:
+        - containerPort: 80
+
+```
