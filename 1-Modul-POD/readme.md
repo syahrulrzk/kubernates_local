@@ -31,3 +31,67 @@ Kedua container di atas akan berjalan bersama dalam satu Pod.
 - Pod = 1 atau lebih container + shared environment
 - Dikelola oleh Kubernetes (biasanya melalui Deployment, StatefulSet, dll.)
 - Merupakan abstraksi dari aplikasi yang berjalan di dalam cluster
+
+## Daftar perintah kubectl paling umum untuk mengelola Pod di Kubernetes:
+### 🔍 Melihat Pod
+| Perintah                                      | Fungsi                                   |
+| --------------------------------------------- | ---------------------------------------- |
+| `kubectl get pods`                            | Melihat semua Pod di namespace aktif     |
+| `kubectl get pods -n <nama-namespace>`        | Melihat Pod di namespace tertentu        |
+| `kubectl describe pod <nama-pod>`             | Melihat detail lengkap Pod               |
+| `kubectl logs <nama-pod>`                     | Melihat log dari Pod                     |
+| `kubectl logs <nama-pod> -c <nama-container>` | Melihat log container tertentu dalam Pod |
+
+### 🚀 Membuat & Menghapus Pod
+| Perintah                        | Fungsi                                 |
+| ------------------------------- | -------------------------------------- |
+| `kubectl apply -f <file.yaml>`  | Membuat atau update Pod dari file YAML |
+| `kubectl create -f <file.yaml>` | Membuat Pod dari file YAML             |
+| `kubectl delete pod <nama-pod>` | Menghapus Pod tertentu                 |
+| `kubectl delete -f <file.yaml>` | Menghapus Pod berdasarkan file YAML    |
+
+### 🛠️ Debugging & Interaksi
+| Perintah                                                      | Fungsi                                   |
+| ------------------------------------------------------------- | ---------------------------------------- |
+| `kubectl exec -it <nama-pod> -- bash`                         | Masuk ke dalam Pod (jika ada `bash`)     |
+| `kubectl exec -it <nama-pod> -- sh`                           | Masuk ke dalam Pod (jika hanya ada `sh`) |
+| `kubectl port-forward pod/<nama-pod> <local-port>:<pod-port>` | Akses Pod dari lokal                     |
+
+### 🧪 Contoh Perintah Praktis
+```shell
+kubectl get pods
+kubectl describe pod my-pod
+kubectl logs my-pod
+kubectl exec -it my-pod -- sh
+kubectl delete pod my-pod
+kubectl apply -f my-pod.yaml
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
