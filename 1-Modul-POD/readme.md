@@ -54,11 +54,19 @@ Kedua container di atas akan berjalan bersama dalam satu Pod.
 ```shell
 kubectl port-forward pod/<nama-pod> <port-lokal>:<port-pod>
 ```
-Contoh
+- Contoh
 ```shell
 kubectl port-forward pod/nginx 8080:80
 ```
+- ✅ Setelah dijalankan...
 
+Buka browser kamu dan kunjungi:
+`http://localhost:8080`
+- 🛠️ Catatan:
+  - Pastikan Pod kamu statusnya `Running`
+  - Jangan lupa gunakan `pod/<nama-pod>` jika kamu juga punya Service dengan nama sama
+  - Untuk berhentiin port forwarding, cukup tekan `Ctrl+C`
+ 
 ### 🛠️ Debugging & Interaksi
 | Perintah                                                      | Fungsi                                   |
 | ------------------------------------------------------------- | ---------------------------------------- |
